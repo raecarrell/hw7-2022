@@ -54,7 +54,7 @@ document.querySelector("#slider").addEventListener("input",function(){
 	document.querySelector("#player1").volume = (document.getElementById("slider").value/100)
 	let volume = (document.querySelector("#player1").volume)*100;
 	console.log(`The current value is ${(volume/100)}`);
-	document.getElementById("volume").innerHTML = `${(volume)}`+"%";
+	document.getElementById("volume").innerHTML = (`${(volume)}`+"%");
 })
 document.querySelector("#vintage").addEventListener("click",function(){
 	document.querySelector("#player1").classList.add("oldSchool");
